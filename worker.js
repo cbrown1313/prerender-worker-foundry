@@ -30,7 +30,7 @@ const BOT_UA = [
   /XML[- ]?Sitemaps/i,
 ];
 
-const ORIGIN = "https://smart-sites-360.lovable.app";
+const ORIGIN = "https://foundrypracticeadvisors.lovable.app";
 
 
 function withDebugHeader(res, value) {
@@ -104,11 +104,11 @@ export default {
   debugRes.headers.set("x-prerender", "1");
   debugRes.headers.set("x-prerender-cache", hit ? "HIT" : "MISS");
 
-  return withDebugHeader(debugRes, "prerender-worker");
+  return withDebugHeader(debugRes, "prerender-worker-foundry");
   return debugRes;
 }
 
     const normalRes = await fetch(`${ORIGIN}${url.pathname}${url.search}`, req);
-    return withDebugHeader(normalRes, "prerender-worker");
+    return withDebugHeader(normalRes, "prerender-worker-foundry");
   }
 };
