@@ -1,5 +1,5 @@
 {
-  "name": "prerender-worker",
+  "name": "prerender-worker-foundry",
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
