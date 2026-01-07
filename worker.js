@@ -70,6 +70,18 @@ export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
 
+
+    
+
+if (url.pathname.startsWith("/__worker_test")) {
+  return new Response("Worker is running ✅", {
+    status: 200,
+    headers: { "content-type": "text/plain; charset=utf-8" }
+  });
+}
+
+    
+
     // Only handle GET/HEAD. Let other methods pass through.
     if (req.method !== "GET" && req.method !== "HEAD") {
       return fetch(targetUrl(url), req);
