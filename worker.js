@@ -1,7 +1,7 @@
 import puppeteer from "@cloudflare/puppeteer";
 
 // Toggle debug headers on/off (set true for testing, false for production)
-const DEBUG_HEADERS = false;
+const DEBUG_HEADERS = true;
 
 const BOT_UA = [
   // Search engines
