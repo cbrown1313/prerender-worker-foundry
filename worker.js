@@ -47,7 +47,7 @@ const BOT_UA = [
   /showyoubot/i,
   /outbrain/i,
   /pinterest/i,
-  "/developers.google.com/+/web/snippet/i",
+  /developers.google.com/i,
   /slackbot/i,
   /vkshare/i,
   /w3c_validator/i,
@@ -68,7 +68,7 @@ const BOT_UA = [
   /chrome-lighthouse/i,
   /telegrambot/i,
   /integration-test/i, // Integration testing
-  /google-inspectiontool/i
+  /google-inspectiontool/i,
 ];
 
 const ORIGIN = "https://foundrypracticeadvisors.lovable.app";
