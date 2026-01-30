@@ -46,7 +46,7 @@ const BOT_UA = [
   /quora link preview/i,
   /showyoubot/i,
   /outbrain/i,
-  /pinterest/0./i,
+  /pinterest/i,
   /developers.google.com/+/web/snippet/i,
   /slackbot/i,
   /vkshare/i,
