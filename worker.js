@@ -47,7 +47,7 @@ const BOT_UA = [
   /showyoubot/i,
   /outbrain/i,
   /pinterest/i,
-  /developers.google.com/+/web/snippet/i,
+  "/developers.google.com/+/web/snippet/i",
   /slackbot/i,
   /vkshare/i,
   /w3c_validator/i,
