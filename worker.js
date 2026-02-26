@@ -3,7 +3,75 @@ import puppeteer from "@cloudflare/puppeteer";
 // Toggle debug headers on/off (set true for testing, false for production)
 const DEBUG_HEADERS = true;
 
-//DJ List
+const BOT_UA = [
+  // Search engines
+  /Googlebot/i,
+  /Google-InspectionTool/i,
+  /Bingbot/i,
+
+  // AI / LLM crawlers
+  /GPTBot/i,
+  /ChatGPT-User/i,
+  /ClaudeBot/i,
+  /Google-Extended/i,
+  /PerplexityBot/i,
+  /Amazonbot/i,
+  /meta-externalagent/i,
+
+  // Social previews
+  /facebookexternalhit/i,
+  /Twitterbot/i,
+  /LinkedInBot/i,
+  /Slackbot/i,
+  /WhatsApp/i,
+
+  // SEO tools
+  /AhrefsBot/i,
+  /SemrushBot/i,
+  /MJ12bot/i,
+  /Screaming Frog/i,
+  /XML[- ]?Sitemaps/i,
+
+  //Additional - prerender
+  /googlebot/i,
+  /yahoo! slurp/i,
+  /bingbot/i,
+  /yandex/i,
+  /baiduspider/i,
+  /facebookexternalhit/i,
+  /twitterbot/i,
+  /rogerbot/i,
+  /linkedinbot/i,
+  /embedly/i,
+  /quora link preview/i,
+  /showyoubot/i,
+  /outbrain/i,
+  /pinterest/i,
+  /developers.google.com/i,
+  /slackbot/i,
+  /vkshare/i,
+  /w3c_validator/i,
+  /redditbot/i,
+  /applebot/i,
+  /whatsapp/i,
+  /flipboard/i,
+  /tumblr/i,
+  /bitlybot/i,
+  /skypeuripreview/i,
+  /nuzzel/i,
+  /discordbot/i,
+  /google page speed/i,
+  /qwantify/i,
+  /pinterestbot/i,
+  /bitrix link preview/i,
+  /xing-contenttabreceiver/i,
+  /chrome-lighthouse/i,
+  /telegrambot/i,
+  /integration-test/i, // Integration testing
+  /google-inspectiontool/i,
+  /googlemessages/i,
+
+  //DJ List
   /facebookexternalhit/i,
 /twitterbot/i,
 /linkedinbot/i,
