@@ -8,6 +8,7 @@ const BOT_UA = [
   /Googlebot/i,
   /Google-InspectionTool/i,
   /Bingbot/i,
+  /MicrosoftPreview/i,
 
   // AI / LLM crawlers
   /GPTBot/i,
